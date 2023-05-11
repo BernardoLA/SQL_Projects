@@ -11,6 +11,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Set Language
-        uses: github/linguist@v8
+        uses: github/linguist@v9
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
