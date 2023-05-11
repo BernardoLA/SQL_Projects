@@ -39,7 +39,6 @@ WHERE DATE_TRUNC('month', occurred_at) =
 
 -- 2.2) We can better format this data visualize it with the following code:
 -- The client wants to know the average volume of sales per day and per paper type in the first month. 
-
 SELECT 'Standard' AS paper_type, 
 	   SUM(standard_amt_usd) AS revenue_per_paper_type
 FROM orders
@@ -73,7 +72,7 @@ FROM
 	WHERE DATE_TRUNC('month', occurred_at) = 
 			(SELECT MIN(DATE_TRUNC('month', occurred_at)) -- filtering subquery
 	 FROM orders)) as sub
--- get this data in the right format for visualize it 
+
 
 
 
