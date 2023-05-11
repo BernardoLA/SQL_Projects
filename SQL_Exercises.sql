@@ -1,3 +1,6 @@
+-- language: SQL
+-- Exercises based on Classes I did online in SQL
+
 -- *-------------- SubQueries ------------------*
 
  -- 1) find the day-channel with the most web events.
